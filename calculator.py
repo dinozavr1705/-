@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 from collections import deque
 import math
-file_path = open("history.txt")
 class CalculatorApp(tk.Tk):
     def __init__(self):
         super().__init__()

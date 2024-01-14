@@ -35,7 +35,8 @@ class CalculatorApp(tk.Tk):
 
         exit_button = ttk.Button(button_frame, text="Выход", command=self.quit)
         exit_button.grid(row=6, column=4, sticky="ne", padx=5, pady=5)
-
+        degree_button = ttk.Button(button_frame, text="^", command=lambda char="**": self.update_expression(char))
+        degree_button.grid(row=5, column=3, sticky="nsew", padx=5, pady=5)
         calculate_button = ttk.Button(button_frame, text="=", command=self.calculate)
         calculate_button.grid(row=4, column=4, sticky="nsew", padx=5, pady=5)
 
